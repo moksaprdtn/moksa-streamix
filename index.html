@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOKSA STREAMIX - Modern YouTube Live Platform</title>
+  <meta name="description" content="Platform agregator dan live streaming YouTube premium futuristik.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Supabase JavaScript SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="site-header" id="header">
+    <div class="header-container">
+      <a href="#hero" class="brand-logo">
+        <span class="logo-icon">▲</span>
+        <span class="logo-text" id="brandNameText">MOKSA<br>STREAMIX</span>
+      </a>
+
+      <nav class="nav-desktop">
+        <a href="#hero" class="nav-link active">Home</a>
+        <a href="#player-section" class="nav-link">Live Streaming</a>
+        <a href="#recommendations-section" class="nav-link">Kategori</a>
+        <a href="#schedule-section" class="nav-link">Jadwal</a>
+        <a href="#donation-section" class="nav-link">Donasi</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="live-badge-header">
+          <span class="pulse-dot"></span> LIVE NOW
+        </div>
+        
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Menu Mobile">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Drawer -->
+    <nav class="nav-mobile" id="navMobile">
+      <a href="#hero" class="mobile-link">Home</a>
+      <a href="#player-section" class="mobile-link">Live Streaming</a>
+      <a href="#recommendations-section" class="mobile-link">Kategori & Rekomendasi</a>
+      <a href="#schedule-section" class="mobile-link">Jadwal</a>
+      <a href="#donation-section" class="mobile-link">Dukung Kreator</a>
+    </nav>
+  </header>
+
+  <!-- Top Ad Banner Slot -->
+  <div class="ad-banner ad-placeholder" id="adBannerHeader">
+    <!-- Iklan khusus HP (Muncul di HP, Disembunyikan di Desktop) -->
+<div class="ad-mobile-only" style="display: block; text-align: center;">
+  
+  <script>
+  atOptions = {
+    'key' : '115c579ced883d06944a129a2d66a65d',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/115c579ced883d06944a129a2d66a65d"></script>
+  
+</div>
+
+<!-- Iklan khusus Desktop (Disembunyikan di HP, Muncul di Desktop) -->
+<div class="ad-desktop-only" style="display: none; text-align: center;">
+  
+  <script>
+  atOptions = {
+    'key' : '6894e81a1453ce2373866e7566aee016',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/6894e81a1453ce2373866e7566aee016"></script>
+  
+</div>
+  </div>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-content">
+        <span class="hero-badge">PUSAT SIARAN LANGSUNG</span>
+        <h1 class="hero-title" id="heroTitle">Nikmati Pengalaman Live Streaming Premium</h1>
+        <p class="hero-description" id="heroDescription">
+          Tonton konten berkualitas tinggi, berinteraksi secara real-time, dan dukung kreator favorit Anda dalam satu ekosistem terpadu.
+        </p>
+        <div class="hero-actions">
+          <a href="#player-section" class="btn btn-primary">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+            Tonton Live Sekarang
+          </a>
+          <a href="#donation-section" class="btn btn-secondary">
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></path></svg>
+            Dukung Kreator
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Ad Hero Banner Slot -->
+    <div class="ad-banner ad-placeholder" id="adBannerHero">
+     
+     <!-- Iklan khusus HP (Muncul di HP, Disembunyikan di Desktop) -->
+<div class="ad-mobile-only" style="display: block; text-align: center;">
+  
+  <script>
+  atOptions = {
+    'key' : '115c579ced883d06944a129a2d66a65d',
+    'format' : 'iframe',
+    'height' : 50,
+    'width' : 320,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/115c579ced883d06944a129a2d66a65d"></script>
+  
+</div>
+
+<!-- Iklan khusus Desktop (Disembunyikan di HP, Muncul di Desktop) -->
+<div class="ad-desktop-only" style="display: none; text-align: center;">
+  
+  <script>
+  atOptions = {
+    'key' : '6894e81a1453ce2373866e7566aee016',
+    'format' : 'iframe',
+    'height' : 90,
+    'width' : 728,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/6894e81a1453ce2373866e7566aee016"></script>
+  
+</div>
+     
+    </div>
+
+    <!-- Main Player Section -->
+    <section class="player-section" id="player-section">
+      <div class="player-container">
+        
+        <!-- Video Left Column -->
+        <div class="video-column">
+          <div class="video-wrapper" id="videoWrapper">
+            <div id="youtubePlayer"></div>
+          </div>
+          
+          <div class="stream-info-card">
+            <div class="stream-header-info">
+              <div>
+                <h2 class="stream-title" id="mainStreamTitle">Loading Stream Title...</h2>
+                <div class="stream-meta">
+                  <span class="channel-name" id="mainChannelName">Channel Name</span>
+                  <span class="meta-divider">•</span>
+                  <a href="#" id="mainChannelLink" target="_blank" rel="noopener" class="btn-text">Kunjungi Channel YouTube ↗</a>
+                </div>
+              </div>
+              <div class="stream-status-pill">
+                <span class="pulse-dot"></span> <span id="mainLiveStatus">LIVE</span>
+              </div>
+            </div>
+            <hr class="card-divider">
+            <p class="stream-description" id="mainStreamDesc">Deskripsi siaran langsung...</p>
+          </div>
+        </div>
+
+        <!-- Sidebar Right Column -->
+        <aside class="sidebar-column">
+          <!-- Chat Panel -->
+          <div class="chat-panel" id="chatPanel">
+            <div class="chat-header">
+              <h3>Live Chat YouTube</h3>
+              <span class="status-indicator online">Terhubung</span>
+            </div>
+            <div class="chat-body" id="chatContainer">
+              <iframe id="liveChatIframe" src="" frameborder="0"></iframe>
+              <div class="chat-fallback" id="chatFallback">
+                <p>Live Chat YouTube membutuhkan penyematan Domain resmi.</p>
+                <a href="#" id="externalChatBtn" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                  Buka Chat di Tab Baru ↗
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ad Sidebar Slot -->
+          <div class="ad-sidebar ad-placeholder" id="adSidebar">
+            
+            <!-- Iklan khusus HP (Muncul di HP, Disembunyikan di Desktop) -->
+<div class="ad-mobile-only" style="display: block; text-align: center;">
+  
+  <script async="async" data-cfasync="false" src="https://bauval.org/21/2c3600323a3635d58a0c0ae08828c746"></script>
+<div id="container-2c3600323a3635d58a0c0ae08828c746"></div>
+  
+</div>
+
+<!-- Iklan khusus Desktop (Disembunyikan di HP, Muncul di Desktop) -->
+<div class="ad-desktop-only" style="display: none; text-align: center;">
+  
+  <script>
+  atOptions = {
+    'key' : 'cfce429ec08ac04a6e1d2d8826fa1d21',
+    'format' : 'iframe',
+    'height' : 60,
+    'width' : 468,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/cfce429ec08ac04a6e1d2d8826fa1d21"></script>
+  
+</div>
+            
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- Ad Player Bottom Slot -->
+    <div class="ad-banner ad-placeholder" id="adBannerPlayerBottom">
+      <script>
+  atOptions = {
+    'key' : 'a1cb99677e81dc4ea72df43cf8f7c49c',
+    'format' : 'iframe',
+    'height' : 300,
+    'width' : 160,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/a1cb99677e81dc4ea72df43cf8f7c49c"></script>
+    </div>
+
+    <!-- Mandatory Feature: Live Streaming Recommendations -->
+    <section class="recommendations-section" id="recommendations-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Discover Live Streams</h2>
+          <p class="section-subtitle">Temukan siaran langsung menarik dari berbagai channel YouTube.</p>
+        </div>
+        <button class="btn btn-outline btn-sm" id="reloadRecsBtn">
+          🔄 Reload Recommendations
+        </button>
+      </div>
+
+      <!-- Filters & Search Bar -->
+      <div class="filter-bar">
+        <div class="category-pills" id="categoryPills">
+          <!-- Dynamically Injected -->
+        </div>
+        <div class="search-box">
+          <input type="text" id="searchInput" placeholder="Cari stream atau channel...">
+          <button id="resetFilterBtn" class="btn-text">Reset</button>
+        </div>
+      </div>
+
+      <!-- Recommendations Grid -->
+      <div class="recommendations-grid" id="recommendationsGrid">
+        <!-- Injected via JS -->
+      </div>
+
+      <div class="empty-state hidden" id="emptyState">
+        <p>Tidak ada siaran langsung yang ditemukan sesuai filter.</p>
+      </div>
+
+      <div class="load-more-container">
+        <button class="btn btn-secondary hidden" id="loadMoreBtn">Muat Lebih Banyak</button>
+      </div>
+    </section>
+
+    <!-- Ad Recommendations Banner Slot -->
+    <div class="ad-banner ad-placeholder" id="adBannerRecommendations">
+      <script>
+  atOptions = {
+    'key' : '11cd6458fc7c783102a07e01831497a5',
+    'format' : 'iframe',
+    'height' : 250,
+    'width' : 300,
+    'params' : {}
+  };
+</script>
+<script src="https://bauval.org/22/11cd6458fc7c783102a07e01831497a5"></script>
+    </div>
+    
+    <!-- Schedule Section -->
+    <section class="schedule-section" id="schedule-section">
+      <div class="section-header">
+        <div>
+          <h2 class="section-title">Jadwal Streaming Mendatang</h2>
+          <p class="section-subtitle">Jangan lewatkan siaran penting berikutnya.</p>
+        </div>
+      </div>
+      <div class="schedule-grid" id="scheduleGrid">
+        <!-- Injected via JS -->
+      </div>
+    </section>
+
+   <!-- Donation Section -->
+   
+    <section class="donation-section" id="donation-section">
+      <div class="donation-card">
+        <div class="donation-header">
+          <h2>Dukung Kreator & Platform</h2>
+          <p>Kontribusi dan dukungan Anda sangat membantu kami dalam menjaga kelangsungan serta pengembangan platform ini.</p>
+        </div>
+        
+        <div class="donation-actions" style="margin-top: 1.5rem; text-align: center;">
+          <a href="https://sociabuzz.com/moksa_prdtn/tribe" id="sociaBuzzDonationBtn" target="_blank" rel="noopener" class="btn btn-primary btn-block" style="display: inline-flex; align-items: center; justify-content: center; gap: 10px;">
+            <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></path></svg>
+            Dukung Lewat SociaBuzz ☕
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Platform Stats Section -->
+    <section class="stats-section">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-label">Status Pemutar</span>
+          <span class="stat-value" id="statPlayerStatus">ONLINE</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Mode Rekomendasi</span>
+          <span class="stat-value" id="statRecMode">MANUAL</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Jumlah Stream Terkurasi</span>
+          <span class="stat-value" id="statCount">--</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Total Donasi Terverifikasi</span>
+          <span class="stat-value">Data Belum Tersedia</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <h3 class="footer-brand" id="footerBrand">STREAMIX</h3>
+        <p class="footer-desc">Platform agregator siaran langsung YouTube premium dengan pengalaman pengguna modern & terintegrasi.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigasi</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#player-section">Live Player</a></li>
+          <li><a href="#recommendations-section">Rekomendasi</a></li>
+          <li><a href="#donation-section">Donasi</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Tautan Resmi</h4>
+        <ul>
+          <li><a href="https://araplhn.org/4/bae12c77e60a2e5a48ad7b0d5c3e8a78" id="footerChannelLink" target="_blank" rel="noopener">YouTube Channel</a></li>
+          <li><a href="https://sociabuzz.com/moksa_prdtn/donate">Dukungan / Donasi</a></li>
+          <li><a href="https://araplhn.org/4/bae12c77e60a2e5a48ad7b0d5c3e8a78">Kebijakan Privasi</a></li>
+          <li><a href="https://araplhn.org/4/bae12c77e60a2e5a48ad7b0d5c3e8a78">Syarat & Ketentuan</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 STREAMIX Platform. Hak Cipta Dilindungi Undang-Undang.</p>
+    </div>
+  </footer>
+
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+  
+  <script data-cfasync="false" src="https://bauval.org/14/a66c63d28fe4c00606ff6b338f4cd01c"></script>
+</body>
+</html>
