@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
   async function loadConfigFromSupabase() {
     try {
       const { data, error } = await supabaseClient
-        .from('moksastreamix-adm')
+        .from('moksastreamix')
         .select('*')
         .eq('id', 1)
         .single();
