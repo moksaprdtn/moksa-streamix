@@ -130,7 +130,7 @@
 
       try {
         const { error } = await supabaseClient
-          .from('moksastreamix-adm')
+          .from('moksastreamix')
           .update(updatedData)
           .eq('id', 1);
 
