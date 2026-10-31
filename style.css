@@ -836,13 +836,7 @@ button, input, select, textarea {
   margin: 1rem auto;
 }
 
-/* Mengatur agar iklan 320x50 menyesuaikan posisi di mode Desktop / Layar Besar */
-@media (min-width: 768px) {
-  .ad-banner iframe {
-    /* Opsional: Sedikit memperbesar skala tampilan di desktop jika diizinkan */
-    max-width: 100%;
-  }
-}
+
 
 /* ==========================================================================
    Responsive Breakpoints
@@ -865,4 +859,23 @@ button, input, select, textarea {
 @media (max-width: 480px) {
   .recommendations-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr; }
+}
+
+
+/* Sembunyikan iklan desktop secara default, tampilkan iklan mobile */
+.ad-desktop-slot {
+  display: none !important;
+}
+.ad-mobile-slot {
+  display: block !important;
+}
+
+/* Jika layar di atas 768px (Desktop / Lebar) */
+@media (min-width: 768px) {
+  .ad-mobile-slot {
+    display: none !important;
+  }
+  .ad-desktop-slot {
+    display: block !important;
+  }
 }
