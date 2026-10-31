@@ -8,11 +8,11 @@ const CONFIG = {
   
   // YouTube Primary Stream Configuration
   primaryStream: {
-    youtubeVideoId: "jfKfPfyJRdk", // ID Video Default (misal: Lofi Girl Live)
-    title: "Nantikan Live Streaming Exclusive Ku 💋",
-    channelName: "君日江",
+    youtubeVideoId: "PHcDZ3hqRs4",
+    title: "Live Eksklusif | M🔺KSA STREAMIX",
+    channelName: "M🔺OKSA STREAMIX",
     channelUrl: "https://araplhn.org/4/bae12c77e60a2e5a48ad7b0d5c3e8a78",
-    description: "Selamat Datang Silahkan Berlama-lama Di sini ,yg udh donate/beri dukungan nya Makaih❤️"
+    description: "Jangan lewatkan dan nantikan ‼️ Chanel Live Streaming Eksklusif Lain nya Hanya di ( M🔺KSA STREAMIX ) Staycu and enjoy - Chiiillll"
   },
 
   // Mode Rekomendasi: 'API' (YouTube Data API v3) atau 'MANUAL' (Kurasi Lokal)
