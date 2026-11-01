@@ -16,10 +16,10 @@ const CONFIG = {
   },
 
   // Mode Rekomendasi: 'API' (YouTube Data API v3) atau 'MANUAL' (Kurasi Lokal)
-  recommendationsMode: "MANUAL", 
+  recommendationsMode: "API", 
   
   // YouTube Data API v3 Key (Isi jika mode = 'API')
-  youtubeApiKey: "", 
+  youtubeApiKey: "AIzaSyBefgAsz6R6ohOuVpFoL22Znilgzr7KD6M",
   
   // Kategori Filter Default
   categories: ["Semua", "Gaming", "Musik", "Berita", "Edukasi", "Teknologi", "Hiburan", "Anime", "Inspirasi"],
